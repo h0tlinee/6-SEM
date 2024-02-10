@@ -1,0 +1,14 @@
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\bin\Debug\net6.0\lab1_sw_dvlp.exe
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\bin\Debug\net6.0\lab1_sw_dvlp.deps.json
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\bin\Debug\net6.0\lab1_sw_dvlp.runtimeconfig.json
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\bin\Debug\net6.0\lab1_sw_dvlp.dll
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\bin\Debug\net6.0\lab1_sw_dvlp.pdb
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.AssemblyInfoInputs.cache
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.AssemblyInfo.cs
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.csproj.CoreCompileInputs.cache
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.dll
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\refint\lab1_sw_dvlp.dll
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.pdb
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\lab1_sw_dvlp.genruntimeconfig.cache
+D:\Учеба\Разработка ПО\lab1\lab1_sw_dvlp\lab1_sw_dvlp\obj\Debug\net6.0\ref\lab1_sw_dvlp.dll
