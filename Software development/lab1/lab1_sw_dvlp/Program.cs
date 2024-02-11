@@ -5,4 +5,4 @@ using System.Text;
 using System.Threading.Tasks;
 using Converter;
 
-System.Console.WriteLine(Converter.Convert_10_p.Do(-186.54846, 16, 6));
+System.Console.WriteLine(Convert_p_10.Do("125",6));
