@@ -49,6 +49,23 @@ namespace Converter
             number = number[..^1];
             return number;
         }
+        //Смена знака
+         public string ChangeSign(){
+           
+                if (number[0]=='-'){
+                    number = number.Substring(1, number.Length - 1);
+                    
+                }else if(number[0]=='0'){
+                    return number;
+                }
+                else{
+                    number=number.Insert(0,"-");
+                }
+                return number;
+            
+
+        }
+  
         //Очистить редактируемое число.
         public string Clear() { 
             number = "";
