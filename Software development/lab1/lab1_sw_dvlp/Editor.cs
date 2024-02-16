@@ -5,20 +5,20 @@ namespace Converter
 {
     class Editor{
 
-        public Editor(){
-            number=zero;
-        }
+        // public Editor(){
+        //     number=zero;
+        // }
         const string dictionary = "0123456789ABCDEF";
         //Поле для хранения редактируемого числа.
-        public string number;
+        private string number;
         //Разделитель целой и дробной частей.
         const string delim = ".";
         //Ноль.
         const string zero = "0";
         //Свойствое для чтения редактируемого числа.
         
-        // public string Number
-        // { get { } }
+        public string Number
+        { get { return number; } }
 
         //целое значение в символ
         public static char Int_to_char(int n)
@@ -26,31 +26,44 @@ namespace Converter
             return dictionary[n];
         }
         //Добавить цифру.
-        public  string AddDigit(char n) {
+        private  string AddDigit(char n) {
             number+=n;
             return number;
         }
         //Точность представления результата.
-          public int Acc(int n){ 
-            return n;
+          public int Acc(){ 
+           
+                int i = 0;
+                while (number[i] != '.' && i < number.Length - 1) 
+                {
+                    i++;
+                }
+                return number.Length - i - 1;
+           
+
         } 
         //Добавить ноль.
-        public string AddZero(){
+        private string AddZero(){
             number+=zero;
             return number;
          }
          //Добавить разделитель.
-        public string AddDelim(){ 
+        private string AddDelim(){ 
             number+=delim;
             return number;
         }
         //Удалить символ справа.
-        public string Bs() { 
+        private string Bs() { 
             number = number[..^1];
             return number;
         }
-        //Смена знака
-         public string ChangeSign(){
+        //Очистить редактируемое число.
+        private string Clear() { 
+            number = "";
+            return number;
+        }
+        
+        private string ChangeSign(){
            
                 if (number[0]=='-'){
                     number = number.Substring(1, number.Length - 1);
@@ -65,13 +78,31 @@ namespace Converter
             
 
         }
-  
-        //Очистить редактируемое число.
-        public string Clear() { 
-            number = "";
-            return number;
+        public dynamic DoEdit(int j,char s='0'){
+            //добавить цифру
+            if (j==0){
+                return AddDigit(s);
+            }
+            if (j==1){
+                return Acc();
+            }
+            if(j==2){
+            return AddZero();
+            }
+            if(j==3){
+            return AddDelim();
+            }
+            if(j==4){
+            return Bs();
+            }
+            if(j==5){
+            return Clear();
+            }
+            if(j==6){
+            return ChangeSign();
+            }
+            return "Nan";
         }
-        
   
        
     }
