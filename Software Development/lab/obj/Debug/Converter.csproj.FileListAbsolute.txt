@@ -1,0 +1,19 @@
+D:\C#\Технологии разработки ПО\Конвертер\Converter\bin\Debug\Converter.exe.config
+D:\C#\Технологии разработки ПО\Конвертер\Converter\bin\Debug\Converter.exe
+D:\C#\Технологии разработки ПО\Конвертер\Converter\bin\Debug\Converter.pdb
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.csproj.AssemblyReference.cache
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.csproj.SuggestedBindingRedirects.cache
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.exe
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.pdb
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.Form1.resources
+D:\C#\Технологии разработки ПО\Конвертер\Converter\obj\Debug\Converter.csproj.GenerateResource.cache
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.csproj.AssemblyReference.cache
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.Form1.resources
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.csproj.GenerateResource.cache
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.exe
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.pdb
+D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.exe.config
+D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.exe
+D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.pdb
