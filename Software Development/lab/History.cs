@@ -50,7 +50,7 @@ namespace Converter
             return L.Count();
         }
 
-        public string GetRecord(int num)
+        public string GetRecord()
         {
             string result = "";
             foreach (Record record in L)

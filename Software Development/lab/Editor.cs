@@ -109,7 +109,7 @@ namespace Converter
         public string DoEdit(int j)
         {
             if (j == 0) AddZero();
-            if (j >= 1 && j <= 15) AddDigit(Int_to_char(j));
+            if (j >= 1 && j <= 15 && number.Length<7) AddDigit(Int_to_char(j));
             if (j == 16) AddDelim();
             if (j == 17) Bs();
             if (j == 18) Clear();

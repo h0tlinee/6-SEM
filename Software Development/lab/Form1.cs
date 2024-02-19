@@ -124,46 +124,21 @@ namespace Converter
         }
 
         //Пункт меню Справка.
-        /*private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AboutBox1 a = new AboutBox1();
-            a.Show();
-        }
-
-        //Пункт меню История.
-        private void историяToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form2 history = new Form2();
-            history.Show();
-            if (ctl.history.Count() == 0)
-            {
-                history.textBox1.AppendText("История пуста");
-                return;
-            }
-            //Ообразить историю.
-            for (int i = 0; i < ctl.history.Count(); i++)
-            {
-                history.textBox1.AppendText(ctl.history[i].ToString());
-            }
-        }*/
-
-        //Обработка алфавитно-цифровых клавиш.
-        //private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        //*private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
         //{
-            //int i = -1;
-            //System.Console.WriteLine(e.KeyChar.ToString());
-            //if (e.KeyChar >= 'A' && e.KeyChar <= 'F') i = (int)e.KeyChar - 'A' + 10;
-            //if (e.KeyChar >= 'a' && e.KeyChar <= 'f') i = (int)e.KeyChar - 'a' + 10;
-            //if (e.KeyChar >= '0' && e.KeyChar <= '9') i = (int)e.KeyChar - '0';
-            //if (e.KeyChar == '.') i = 16;
-            //if ((int)e.KeyChar == 8) i = 17;
-            //if ((int)e.KeyChar == 13) i = 19;
-            //if ((i < ctl.Pin) || (i >= 16)) DoCmnd(i);
+           // AboutBox1 a = new AboutBox1();
+           // a.Show();
         //}
+
+        
+        
+
+       
 
         //Обработка клавиш управления.
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            button20.Select();
             System.Windows.Forms.Button buttonToClick = null;
             System.Console.WriteLine(e.KeyCode);
             switch (e.KeyCode)
@@ -263,6 +238,26 @@ namespace Converter
 
         }
 
+        private void историяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 history = new Form2();
+            history.Show();
+            if (ctl.history.Count() == 0)
+            {
+                history.textBox1.AppendText("История пуста");
+                return;
+            }
+            //Ообразить историю.
+           
+                history.textBox1.AppendText(ctl.history.GetRecord());
+            
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 about=new Form3();
+            about.Show();   
+        }
     }
 
         

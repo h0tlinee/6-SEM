@@ -17,3 +17,5 @@ D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.pdb
 D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.exe.config
 D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.exe
 D:\Учеба\Разработка ПО\lab1\lab\bin\Debug\Converter.pdb
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.Form2.resources
+D:\Учеба\Разработка ПО\lab1\lab\obj\Debug\Converter.Form3.resources
