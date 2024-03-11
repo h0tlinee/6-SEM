@@ -1,2 +1,0 @@
-process: 22827 parent process: 22805 result: 362880
-process: 22828 parent process: 22805 result: 120
