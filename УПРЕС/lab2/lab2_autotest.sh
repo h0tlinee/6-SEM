@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Компилируем программу на C
-gcc lab2.c -o test
+gcc -o test lab2.c
 
 # Функция для вычисления факториала числа
 factorial() {
-  if [ $1 -eq 0 ]; then
+  if [ $1 -eq 0 ] || [ $1 -eq 1 ]; then
     echo 1
   else
     echo "$(($1 * $(factorial $(($1 - 1)))))"
@@ -13,22 +13,18 @@ factorial() {
 }
 
 # Запускаем тесты
-for n in {1..5}; do
-  for m in {0..4}; do
+for m in {0..5}; do
+  for n in {1..6}; do
     result=$(./test $m $n)
     factorial_n=$(factorial $n)
-    factorial_n_m=$(factorial $(($n - $m)))
-    expected=$((factorial_n / factorial_n_m))
-
-    echo "Testing A($m,$n): Expected $expected, Got $result"
-
+    factorial_nm=$(factorial $(($n - $m)))
+    
+    expected=$((factorial_n / factorial_nm))
+    
     if [ $result -eq $expected ]; then
-      echo "Test Passed!"
+      echo "Тест для m=$m, n=$n пройден успешно. Ожидаемый результат: $expected, Фактический результат: $result"
     else
-      echo "Test Failed!"
+      echo "Тест для m=$m, n=$n не пройден. Ожидаемый результат: $expected, Фактический результат: $result"
     fi
   done
 done
-
-# Очищаем после себя скомпилированный файл
-rm test
