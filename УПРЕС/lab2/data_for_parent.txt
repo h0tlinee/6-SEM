@@ -1,2 +1,2 @@
-process: 9644 parent process: 9643 result: 24
-process: 9645 parent process: 9643 result: 1
+process: 15480 parent process: 15479 result: 362880
+process: 15481 parent process: 15479 result: 120
