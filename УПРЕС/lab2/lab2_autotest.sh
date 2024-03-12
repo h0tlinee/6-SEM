@@ -1,30 +1,23 @@
-#!/bin/bash
+#!/bin/sh
+echo "Запуск теста 1"
+./lab2 4 9 > res1_exp
+if (diff res1_exp res1); then
+    echo "Тест 1: успех"
+else
+    echo "Тест 1: ошибка"
+fi
+echo "Запуск теста 2"
+./lab2 10 1 > res2_exp
+if (diff res2_exp res2); then
+    echo "Тест 2: успех"
+else
+    echo "Тест 2: ошибка"
+fi
 
-# Компилируем программу на C
-gcc -o test lab2.c
-
-# Функция для вычисления факториала числа
-factorial() {
-  if [ $1 -eq 0 ] || [ $1 -eq 1 ]; then
-    echo 1
-  else
-    echo "$(($1 * $(factorial $(($1 - 1)))))"
-  fi
-}
-
-# Запускаем тесты
-for m in {0..5}; do
-  for n in {1..6}; do
-    result=$(./test $m $n)
-    factorial_n=$(factorial $n)
-    factorial_nm=$(factorial $(($n - $m)))
-    
-    expected=$((factorial_n / factorial_nm))
-    
-    if [ $result -eq $expected ]; then
-      echo "Тест для m=$m, n=$n пройден успешно. Ожидаемый результат: $expected, Фактический результат: $result"
-    else
-      echo "Тест для m=$m, n=$n не пройден. Ожидаемый результат: $expected, Фактический результат: $result"
-    fi
-  done
-done
+echo "Запуск теста 3"
+./lab2 3 4 > res3_exp
+if (diff res3_exp res3); then
+    echo "Тест 3: успех"
+else
+    echo "Тест 3: ошибка"
+fi

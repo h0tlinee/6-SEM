@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -15,14 +14,18 @@ unsigned long long factorial(unsigned long long n)
         return n * factorial(n - 1);
 }
 
-int main()
+int main(int argc, char *argv[])
 {
+    if (argc != 3)
+    {
+        printf("Использование: %s <число m> <число n>\n", argv[0]);
+        return -1;
+    }
     FILE *finter;
     char buff_of_string[N];
     finter = fopen("data_for_parent.txt", "w");
-    unsigned long long m, n;
-    printf("Введите значения m и n: ");
-    scanf("%llu %llu", &m, &n);
+    unsigned long long m = atoi(argv[1]);
+    unsigned long long n = atoi(argv[2]);
 
     if (m > n)
     {
@@ -55,6 +58,7 @@ int main()
         {
             // Код родительского процесса
             wait(NULL);
+            wait(NULL);
 
             fclose(finter);
 
@@ -79,13 +83,13 @@ int main()
         }
         else
         {
-            perror("Ошибка при создании второго потомка.\n");
+            printf("Ошибка при создании второго потомка.\n");
             return 21;
         }
     }
     else
     {
-        perror("Ошибка при создании первого потомка.\n");
+        printf("Ошибка при создании первого потомка.\n");
         return 22;
     }
 
