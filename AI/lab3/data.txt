@@ -1,0 +1,8 @@
+languages("Russian")
+languages("Italian")
+languages("German")
+languages("Japanese")
+languages("French")
+languages("English")
+know("Alex","Russian")
+know("Alex","English")
