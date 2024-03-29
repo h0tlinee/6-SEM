@@ -1,0 +1,10 @@
+bin/
+obj/
+Properties/
+*.config
+*.csproj
+*.sln
+*.resx
+*.exe
+*.o
+*.
