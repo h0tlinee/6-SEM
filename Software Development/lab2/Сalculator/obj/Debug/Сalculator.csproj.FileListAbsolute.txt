@@ -1,0 +1,24 @@
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.csproj.AssemblyReference.cache
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.csproj.SuggestedBindingRedirects.cache
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.csproj.CoreCompileInputs.cache
+D:\C#\Технологии разработки ПО\Сalculator\bin\Debug\Сalculator.exe.config
+D:\C#\Технологии разработки ПО\Сalculator\bin\Debug\Сalculator.exe
+D:\C#\Технологии разработки ПО\Сalculator\bin\Debug\Сalculator.pdb
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.exe
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.pdb
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.Form1.resources
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.Properties.Resources.resources
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.csproj.GenerateResource.cache
+D:\C#\Технологии разработки ПО\Сalculator\obj\Debug\Сalculator.About.resources
+D:\Учеба\Разработка ПО\Сalculator\bin\Debug\Сalculator.exe.config
+D:\Учеба\Разработка ПО\Сalculator\bin\Debug\Сalculator.exe
+D:\Учеба\Разработка ПО\Сalculator\bin\Debug\Сalculator.pdb
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.csproj.AssemblyReference.cache
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.About.resources
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.Form1.resources
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.Properties.Resources.resources
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.csproj.GenerateResource.cache
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.csproj.CoreCompileInputs.cache
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.exe
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.pdb
+D:\Учеба\Разработка ПО\Сalculator\obj\Debug\Сalculator.Form2.resources
