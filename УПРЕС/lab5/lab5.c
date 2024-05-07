@@ -18,6 +18,7 @@ struct msgbuf
   char mtext[MAX_SIZE]; // Текст сообщения
 };
 
+// Структура для семафора
 union semun
 {
   int val;
@@ -25,13 +26,14 @@ union semun
   unsigned short *array;
 };
 
+// Операции для работы с семафорами
 struct sembuf acquire_op = {0, -1, SEM_UNDO};
 struct sembuf release_op = {0, 1, SEM_UNDO};
 
 int main()
 {
-  key_t key = ftok("data.txt", 'A');
-  int msgid = msgget(key, IPC_CREAT | 0666);
+  key_t key = ftok("data.txt", 'A');         // Создание IPC ключа
+  int msgid = msgget(key, IPC_CREAT | 0666); // Создание новой очереди сообщений
   if (msgid == -1)
   {
     perror("Ошибка создания очереди сообщений");
@@ -45,7 +47,7 @@ int main()
     exit(21);
   }
 
-  int semid = semget(key, 1, IPC_CREAT | 0666);
+  int semid = semget(key, 1, IPC_CREAT | 0666); // Создание семафора
   if (semid == -1)
   {
     perror("Ошибка создания семафора");
@@ -69,14 +71,17 @@ int main()
       exit(24);
     }
     if (pid == 0)
-    { // Код для дочернего процесса (проверить этот код!!!!)
+    {
+      // Код для дочернего процесса
       struct msgbuf message;
+      int line_number = i + 1;
       while (fgets(message.mtext, MAX_SIZE, fp) != NULL)
       {
         semop(semid, &acquire_op, 1);
-        message.mtype = i + 1;
+        message.mtype = line_number;
         msgsnd(msgid, &message, sizeof(message.mtext), 0);
         semop(semid, &release_op, 1);
+        sleep(line_number % 4 + 1); // Добавим небольшую задержку для демонстрации несбалансированности
       }
       exit(0);
     }
